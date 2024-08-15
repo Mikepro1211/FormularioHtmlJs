@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Contacto</h1>   
+
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"  required placeholder="Ingrese Nombre">
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required placeholder="Ingrese correo electronico">
+
+            <label for="cel" name="cel">Número de telefono:</label>
+            <input type="text" name="cel" required placeholder="Ingrese Numero de telefono">
+
+            <label for="direccion" name="direccion">Dirección</label>
+            <input type="text" name="direccion" required placeholder="Ingrese su direccion">
+            <button type="submit" onclick="obtenerDatos()">Enviar</button>
+
+            
+        </form>
+        
+        <div id="resultado"></div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
